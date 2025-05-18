@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { UserProvider } from "./context/UserContext";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <UserProvider>
+      <div>Home</div>
+    </UserProvider>
+  );
+};
 
-export default Home
+export default Home;
